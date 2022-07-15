@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-05-06T07:20:09Z" product-name="ameos_petition">
+		<header/>
+		<body>
+			<trans-unit id="backend.plugins.form"><source><![CDATA[Ameos Share By Email > Form]]></source></trans-unit>
+			<trans-unit id="backend.plugins.link"><source><![CDATA[Ameos Share By Email > Link]]></source></trans-unit>
+			<trans-unit id="introduction"><source><![CDATA[Your about to send the following link by email]]></source></trans-unit>
+			<trans-unit id="link.label"><source><![CDATA[Share the page by email !]]></source></trans-unit>
+			<trans-unit id="form.fields.name.label"><source><![CDATA[Name]]></source></trans-unit>
+			<trans-unit id="form.fields.name.errors.required"><source><![CDATA[Please fill in your name]]></source></trans-unit>
+			<trans-unit id="form.fields.email.label"><source><![CDATA[Email]]></source></trans-unit>
+			<trans-unit id="form.fields.email.errors.required"><source><![CDATA[Please fill in your email]]></source></trans-unit>
+			<trans-unit id="form.fields.email.errors.email"><source><![CDATA[Your email is not valid]]></source></trans-unit>
+			<trans-unit id="form.fields.destinataire.label"><source><![CDATA[Receiver email]]></source></trans-unit>
+			<trans-unit id="form.fields.destinataire.errors.required"><source><![CDATA[Please fill in the receiver email]]></source></trans-unit>
+			<trans-unit id="form.fields.destinataire.errors.email"><source><![CDATA[The receiver email is not valid]]></source></trans-unit>
+			<trans-unit id="form.fields.message.label"><source><![CDATA[Message]]></source></trans-unit>
+			<trans-unit id="form.fields.captcha.label"><source><![CDATA[Captcha]]></source></trans-unit>
+			<trans-unit id="form.fields.captcha.errors.required"><source><![CDATA[Please fill in the captcha]]></source></trans-unit>
+			<trans-unit id="form.fields.submit.label"><source><![CDATA[Submit]]></source></trans-unit>
+			<trans-unit id="errors.incorrectlink"><source><![CDATA[Erreur&nbsp;: you can't share this link !]]></source></trans-unit>
+			<trans-unit id="errors.nolink"><source><![CDATA[Error&nbsp;: no link provided !]]></source></trans-unit>
+			<trans-unit id="mail.greetings"><source><![CDATA[Hello]]></source></trans-unit>
+			<trans-unit id="mail.introduction"><source><![CDATA[wishes you to discover the following page]]></source></trans-unit>
+			<trans-unit id="mail.message.introduction"><source><![CDATA[He added this message specially intented for you]]></source></trans-unit>
+			<trans-unit id="mail.signature"><source><![CDATA[Best regards]]></source></trans-unit>
+			<trans-unit id="confirmation"><source><![CDATA[Email had been sent, we thank you for sharing our content]]></source></trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,23 @@
+plugin.tx_ameossharebyemail{
+	settings {
+		sharePid = 
+		email{
+			subject = Someone wants to share a page to you
+			sender{
+				email = email@example.com
+				name = John Doe
+			}
+		}
+	}
+	view{
+		templateRootPaths {
+			10 = 
+		}
+		partialRootPaths {
+			10 = 
+		}
+		layoutRootPaths {
+			10 = 
+		}
+	}
+}

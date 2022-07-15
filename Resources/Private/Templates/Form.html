@@ -1,0 +1,46 @@
+{namespace af=Ameos\AmeosForm\ViewHelpers}
+<p><f:translate key="introduction" />&nbsp;: <f:link.typolink parameter="{link}" target="_blank">{link}</f:link.typolink></p>
+<af:form form="{form}">
+	<div>
+		<label for="tx_ameossharebyemail_share_name"><f:translate key="form.fields.name.label" /> <span class="required">*</span>&nbsp;:
+			<f:if condition="{name.errors}">
+			<f:for each="{name.errors}" as="erreur">
+			<br /><span class="hasError">{erreur}</span>
+			</f:for></f:if>
+		</label> {name}
+	</div>
+	<div>
+		<label for="tx_ameossharebyemail_share_email"><f:translate key="form.fields.email.label" /> <span class="required">*</span>&nbsp;:
+			<f:if condition="{email.errors}">
+			<f:for each="{email.errors}" as="erreur">
+			<br /><span class="hasError">{erreur}</span>
+			</f:for></f:if>
+		</label> {email}
+	</div>
+	<div>
+		<label for="tx_ameossharebyemail_share_destinataire"><f:translate key="form.fields.destinataire.label" /> <span class="required">*</span>&nbsp;:
+			<f:if condition="{destinataire.errors}">
+			<f:for each="{destinataire.errors}" as="erreur">
+			<br /><span class="hasError">{erreur}</span>
+			</f:for></f:if>
+		</label> {destinataire}
+	</div>
+	<div>
+		<label for="tx_ameossharebyemail_share_message"><f:translate key="form.fields.message.label" />&nbsp;:
+			<f:if condition="{message.errors}">
+			<f:for each="{message.errors}" as="erreur">
+			<br /><span class="hasError">{erreur}</span>
+			</f:for></f:if>
+		</label> {message}
+	</div>
+	<div>
+		<label for="tx_ameossharebyemail_share_captcha"><f:translate key="form.fields.captcha.label" /> <span class="required">*</span>&nbsp;:
+			<f:if condition="{captcha.errors}">
+			<f:for each="{captcha.errors}" as="erreur">
+			<br /><span class="hasError">{erreur}</span>
+			</f:for></f:if>
+		</label>
+		{captcha}
+	</div>
+	<div>{submit}</div>
+</af:form>

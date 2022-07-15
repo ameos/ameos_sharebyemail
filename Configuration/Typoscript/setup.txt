@@ -1,0 +1,51 @@
+plugin.tx_ameossharebyemail{
+	settings {
+		sharePid = {$plugin.tx_ameossharebyemail.settings.sharePid}
+		email{
+			subject = {$plugin.tx_ameossharebyemail.settings.email.subject}
+			sender{
+				email = {$plugin.tx_ameossharebyemail.settings.email.sender.email}
+				name = {$plugin.tx_ameossharebyemail.settings.email.sender.name}
+			}
+		}
+	}
+	view{
+		templateRootPaths {
+			10 = {$plugin.tx_ameossharebyemail.view.templateRootPaths.10}
+		}
+		partialRootPaths {
+			10 = {$plugin.tx_ameossharebyemail.view.partialRootPaths.10}
+		}
+		layoutRootPaths {
+			10 = {$plugin.tx_ameossharebyemail.view.layoutRootPaths.10}
+		}
+	}
+}
+
+plugin.tx_ameossharebyemail_link = USER
+plugin.tx_ameossharebyemail_link {
+	userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+    pluginName = link
+    extensionName = AmeosSharebyemail
+    vendorName = Ameos
+	switchableControllerActions {
+		Share {
+			1 = link
+		}
+	}
+  }
+}
+
+plugin.tx_ameossharebyemail_form = USER
+plugin.tx_ameossharebyemail_form {
+	userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+    pluginName = share
+    extensionName = AmeosSharebyemail
+    vendorName = Ameos
+	switchableControllerActions {
+		Share {
+			1 = form
+		}
+	}
+  }
+}

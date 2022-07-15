@@ -1,0 +1,36 @@
+{
+    "name": "ameos/ameos_sharebyemail",
+    "description": "Share a link by email (tipafriend replacement) Provides a sharing link and a form to send the link by email",
+    "type": "typo3-cms-extension",
+    "homepage": "https://github.com/ameos/ameos_sharebyemail",
+    "require": {
+        "typo3/cms-core": "^11.5 | dev-master",
+        "typo3/cms-fluid": "^11.5 | dev-master",
+        "typo3/cms-extbase": "^11.5 | dev-master",
+        "php": ">=7.4.0"
+    },
+    "keywords": [
+        "TYPO3",
+        "CMS",
+        "Sharing",
+        "Email",
+        "tipafriend",
+        "social",
+        "ameos",
+        "sharebyemail"
+    ],
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Ameos Team",
+            "email": "typo3dev@ameos.com",
+            "homepage": "http://www.ameos.com/"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Ameos\\AmeosSharebyemail\\": "Classes"
+        }
+    }
+}
+
