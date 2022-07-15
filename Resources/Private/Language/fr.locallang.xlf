@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2016-05-06T07:20:09Z" product-name="ameos_petition">
+		<header/>
+		<body>
+			<trans-unit id="backend.plugins.form"><target><![CDATA[Ameos Share By Email > Formulaire]]></target></trans-unit>
+			<trans-unit id="backend.plugins.link"><target><![CDATA[Ameos Share By Email > Lien]]></target></trans-unit>
+
+			<trans-unit id="introduction"><target><![CDATA[Vous êtes sur le point d'envoyer le lien suivant par courriel]]></target></trans-unit>
+			<trans-unit id="link.label"><target><![CDATA[Partagez la page par email !]]></target></trans-unit>
+			<trans-unit id="form.fields.name.label"><target><![CDATA[Nom]]></target></trans-unit>
+			<trans-unit id="form.fields.name.errors.required"><target><![CDATA[Veuillez renseigner votre nom]]></target></trans-unit>
+			<trans-unit id="form.fields.email.label"><target><![CDATA[Email]]></target></trans-unit>
+			<trans-unit id="form.fields.email.errors.required"><target><![CDATA[Veuillez renseigner votre email]]></target></trans-unit>
+			<trans-unit id="form.fields.email.errors.email"><target><![CDATA[Votre email n'est pas valide]]></target></trans-unit>
+			<trans-unit id="form.fields.destinataire.label"><target><![CDATA[Email du destinataire]]></target></trans-unit>
+			<trans-unit id="form.fields.destinataire.errors.required"><target><![CDATA[Veuillez renseigner l'email du destinataire]]></target></trans-unit>
+			<trans-unit id="form.fields.destinataire.errors.email"><target><![CDATA[L'email du destinataire n'est pas valide]]></target></trans-unit>
+			<trans-unit id="form.fields.message.label"><target><![CDATA[Message]]></target></trans-unit>
+			<trans-unit id="form.fields.captcha.label"><target><![CDATA[Code de sécurité]]></target></trans-unit>
+			<trans-unit id="form.fields.captcha.errors.required"><target><![CDATA[Veuillez renseigner le code de sécurité]]></target></trans-unit>
+			<trans-unit id="form.fields.submit.label"><target><![CDATA[Envoyer]]></target></trans-unit>
+			<trans-unit id="errors.incorrectlink"><target><![CDATA[Erreur&nbsp;: vous ne pouvez pas partager ce lien !]]></target></trans-unit>
+			<trans-unit id="errors.nolink"><target><![CDATA[Erreur&nbsp;: aucun lien a partager !]]></target></trans-unit>
+			<trans-unit id="mail.greetings"><target><![CDATA[Bonjour]]></target></trans-unit>
+			<trans-unit id="mail.introduction"><target><![CDATA[souhaite vous faire découvrir la page suivante]]></target></trans-unit>
+			<trans-unit id="mail.message.introduction"><target><![CDATA[Il a ajouté ce message spécialement pour vous]]></target></trans-unit>
+			<trans-unit id="mail.signature"><target><![CDATA[Sincères salutations]]></target></trans-unit>
+			<trans-unit id="confirmation"><target><![CDATA[L'email a bien été envoyé, nous vous remercions d'avoir partager notre contenu]]></target></trans-unit>
+		</body>
+	</file>
+</xliff>
