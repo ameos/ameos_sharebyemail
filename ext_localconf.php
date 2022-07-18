@@ -1,4 +1,5 @@
 <?php
+
 if (!defined('TYPO3_MODE')) {
     die('Access denied.');
 }
@@ -25,3 +26,8 @@ if (!defined('TYPO3_MODE')) {
         \Ameos\AmeosSharebyemail\Controller\ShareController::class => 'link',
     ]
 );
+
+// template mail path
+$GLOBALS['TYPO3_CONF_VARS']['MAIL']['templateRootPaths'][1658132362] = 'EXT:ameos_sharebyemail/Resources/Private/Templates/Email';
+$GLOBALS['TYPO3_CONF_VARS']['MAIL']['partialRootPaths'][1658132362] = 'EXT:ameos_sharebyemail/Resources/Private/Partials/Email';
+$GLOBALS['TYPO3_CONF_VARS']['MAIL']['layoutRootPaths'][1658132362] = 'EXT:ameos_sharebyemail/Resources/Private/Layouts/Email';
