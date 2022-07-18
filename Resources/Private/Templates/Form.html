@@ -10,20 +10,20 @@
 		</label> {name}
 	</div>
 	<div>
-		<label for="tx_ameossharebyemail_share_email"><f:translate key="form.fields.email.label" /> <span class="required">*</span>&nbsp;:
-			<f:if condition="{email.errors}">
-			<f:for each="{email.errors}" as="erreur">
+		<label for="tx_ameossharebyemail_share_sender"><f:translate key="form.fields.sender.label" /> <span class="required">*</span>&nbsp;:
+			<f:if condition="{sender.errors}">
+			<f:for each="{sender.errors}" as="erreur">
 			<br /><span class="hasError">{erreur}</span>
 			</f:for></f:if>
-		</label> {email}
+		</label> {sender}
 	</div>
 	<div>
-		<label for="tx_ameossharebyemail_share_destinataire"><f:translate key="form.fields.destinataire.label" /> <span class="required">*</span>&nbsp;:
-			<f:if condition="{destinataire.errors}">
-			<f:for each="{destinataire.errors}" as="erreur">
+		<label for="tx_ameossharebyemail_share_recipient"><f:translate key="form.fields.recipient.label" /> <span class="required">*</span>&nbsp;:
+			<f:if condition="{recipient.errors}">
+			<f:for each="{recipient.errors}" as="erreur">
 			<br /><span class="hasError">{erreur}</span>
 			</f:for></f:if>
-		</label> {destinataire}
+		</label> {recipient}
 	</div>
 	<div>
 		<label for="tx_ameossharebyemail_share_message"><f:translate key="form.fields.message.label" />&nbsp;:
