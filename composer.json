@@ -7,6 +7,7 @@
         "typo3/cms-core": "^11.5 | dev-master",
         "typo3/cms-fluid": "^11.5 | dev-master",
         "typo3/cms-extbase": "^11.5 | dev-master",
+        "ameos/ameos_form": "^1 | dev-master",
         "php": ">=7.4.0"
     },
     "keywords": [
