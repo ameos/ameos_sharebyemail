@@ -7,15 +7,15 @@ use TYPO3\CMS\Core\Site\SiteFinder;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
-use TYPO3\CMS\Frontend\Utility\CanonicalizationUtility;
 use Ameos\AmeosSharebyemail\Form\Form;
+use Ameos\AmeosSharebyemail\Utility\LinkUtility;
 use Ameos\AmeosSharebyemail\Utility\LocalizationUtility;
 use Ameos\AmeosSharebyemail\Service\EmailService;
 
 class ShareController extends ActionController
 {
     /**
-     * form action
+     * Form action
      *
      * @return Response
      */
@@ -23,7 +23,7 @@ class ShareController extends ActionController
     {
         if ($this->request->hasArgument('link')) {
             $link = $this->request->getArgument('link');
-            if ($this->isLinkCorrect($link)) {
+            if (LinkUtility::isLinkCorrect($link)) {
                 $form = GeneralUtility::makeInstance(Form::class);
                 if ($form->validate($this->request)) {
                         $emailService = GeneralUtility::makeInstance(EmailService::class);
@@ -51,42 +51,13 @@ class ShareController extends ActionController
     }
 
     /**
-     * Check if link is correct
-     *
-     * @param string $link
-     * @return bool
-     */
-    protected function isLinkCorrect(string $link)
-    {
-        $siteFinder = GeneralUtility::makeInstance(SiteFinder::class, $siteConfiguration);
-        $site = $siteFinder->getSiteByPageId($GLOBALS['TSFE']->id);
-        if (filter_var($link, FILTER_VALIDATE_URL) && strpos(urldecode($link), $site->getBase()->getHost()) > '0') {
-            return true;
-        }
-        return false;
-    }
-
-    /**
      * link action
      *
      * @return ResponseInterface
      */
     public function linkAction()
     {
-        $currentLink = $GLOBALS['TSFE']->cObj->typoLink_URL([
-            'parameter' => $GLOBALS['TSFE']->id . ',' . $GLOBALS['TSFE']->type,
-            'forceAbsoluteUrl' => true,
-            'addQueryString' => true,
-            'addQueryString.' => [
-                'exclude' => implode(
-                    ',',
-                    CanonicalizationUtility::getParamsToExcludeForCanonicalizedUrl(
-                        (int)$GLOBALS['TSFE']->id,
-                        (array)$GLOBALS['TYPO3_CONF_VARS']['FE']['additionalCanonicalizedUrlParameters']
-                    )
-                ),
-            ],
-        ]);
+        $currentLink = LinkUtility::getCurrentLink();
         $this->view->assign('sharePid', $this->settings['sharePid']);
         $this->view->assign('currentLink', $currentLink);
 
