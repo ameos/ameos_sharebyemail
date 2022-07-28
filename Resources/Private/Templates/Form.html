@@ -2,15 +2,15 @@
 <p><f:translate key="introduction" />&nbsp;: <f:link.typolink parameter="{link}" target="_blank">{link}</f:link.typolink></p>
 <af:form form="{form}">
 	<div>
-		<label for="tx_ameossharebyemail_share_name"><f:translate key="form.fields.name.label" /> <span class="required">*</span>&nbsp;:
-			<f:if condition="{name.errors}">
-			<f:for each="{name.errors}" as="erreur">
+		<label for="tx_ameossharebyemail_share_recipient"><f:translate key="form.fields.recipient.label" /> <span class="required">(<f:translate key="required" />)</span>&nbsp;:
+			<f:if condition="{recipient.errors}">
+			<f:for each="{recipient.errors}" as="erreur">
 			<br /><span class="hasError">{erreur}</span>
 			</f:for></f:if>
-		</label> {name}
+		</label> {recipient}
 	</div>
 	<div>
-		<label for="tx_ameossharebyemail_share_sender"><f:translate key="form.fields.sender.label" /> <span class="required">*</span>&nbsp;:
+		<label for="tx_ameossharebyemail_share_sender"><f:translate key="form.fields.sender.label" /> <span class="required">(<f:translate key="required" />)</span>&nbsp;:
 			<f:if condition="{sender.errors}">
 			<f:for each="{sender.errors}" as="erreur">
 			<br /><span class="hasError">{erreur}</span>
@@ -18,12 +18,12 @@
 		</label> {sender}
 	</div>
 	<div>
-		<label for="tx_ameossharebyemail_share_recipient"><f:translate key="form.fields.recipient.label" /> <span class="required">*</span>&nbsp;:
-			<f:if condition="{recipient.errors}">
-			<f:for each="{recipient.errors}" as="erreur">
+		<label for="tx_ameossharebyemail_share_name"><f:translate key="form.fields.name.label" />&nbsp;:
+			<f:if condition="{name.errors}">
+			<f:for each="{name.errors}" as="erreur">
 			<br /><span class="hasError">{erreur}</span>
 			</f:for></f:if>
-		</label> {recipient}
+		</label> {name}
 	</div>
 	<div>
 		<label for="tx_ameossharebyemail_share_message"><f:translate key="form.fields.message.label" />&nbsp;:
@@ -34,7 +34,7 @@
 		</label> {message}
 	</div>
 	<div>
-		<label for="tx_ameossharebyemail_share_captcha"><f:translate key="form.fields.captcha.label" /> <span class="required">*</span>&nbsp;:
+		<label for="tx_ameossharebyemail_share_captcha"><f:translate key="form.fields.captcha.label" /> <span class="required">(<f:translate key="required" />)</span>&nbsp;:
 			<f:if condition="{captcha.errors}">
 			<f:for each="{captcha.errors}" as="erreur">
 			<br /><span class="hasError">{erreur}</span>

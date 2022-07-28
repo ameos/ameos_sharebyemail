@@ -15,7 +15,7 @@ use Ameos\AmeosSharebyemail\Service\EmailService;
 class ShareController extends ActionController
 {
     /**
-     * Form action
+     * form action
      *
      * @return Response
      */
@@ -31,10 +31,12 @@ class ShareController extends ActionController
 
                         $this->forward('confirm');
                 }
-                $this->view->assignMultiple([
+                $this->view->assignMultiple(
+                    [
                     'form' => $form->getForm(),
                     'link' => filter_var(urldecode($link), FILTER_SANITIZE_URL)
-                ]);
+                    ]
+                );
             } else {
                 $this->error = LocalizationUtility::getLLLabel("errors.incorrectlink");
                 $this->forward(
