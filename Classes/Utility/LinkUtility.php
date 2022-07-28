@@ -11,7 +11,7 @@ class LinkUtility
     /**
      * Check if link is correct
      *
-     * @param string $link
+     * @param  string $link
      * @return bool
      */
     public static function isLinkCorrect(string $link)
@@ -27,12 +27,13 @@ class LinkUtility
     /**
      * get current Link
      *
-     * @param $label
+     * @param  $label
      * @return string
      */
     public static function getCurrentLink()
     {
-        return $GLOBALS['TSFE']->cObj->typoLink_URL([
+        return $GLOBALS['TSFE']->cObj->typoLink_URL(
+            [
             'parameter' => $GLOBALS['TSFE']->id . ',' . $GLOBALS['TSFE']->type,
             'forceAbsoluteUrl' => true,
             'addQueryString' => true,
@@ -45,6 +46,7 @@ class LinkUtility
                     )
                 ),
             ],
-        ]);
+            ]
+        );
     }
 }

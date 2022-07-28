@@ -7,9 +7,9 @@
 			<trans-unit id="backend.plugins.link"><source><![CDATA[Ameos Share By Email > Link]]></source></trans-unit>
 			<trans-unit id="introduction"><source><![CDATA[Your about to send the following link by email]]></source></trans-unit>
 			<trans-unit id="link.label"><source><![CDATA[Share the page by email !]]></source></trans-unit>
-			<trans-unit id="form.fields.name.label"><source><![CDATA[Name]]></source></trans-unit>
+			<trans-unit id="form.fields.name.label"><source><![CDATA[Your Name]]></source></trans-unit>
 			<trans-unit id="form.fields.name.errors.required"><source><![CDATA[Please fill in your name]]></source></trans-unit>
-			<trans-unit id="form.fields.sender.label"><source><![CDATA[Email]]></source></trans-unit>
+			<trans-unit id="form.fields.sender.label"><source><![CDATA[Your Email]]></source></trans-unit>
 			<trans-unit id="form.fields.sender.errors.required"><source><![CDATA[Please fill in your email]]></source></trans-unit>
 			<trans-unit id="form.fields.sender.errors.email"><source><![CDATA[Your email is not valid]]></source></trans-unit>
 			<trans-unit id="form.fields.recipient.label"><source><![CDATA[Receiver email]]></source></trans-unit>
@@ -26,6 +26,7 @@
 			<trans-unit id="mail.message.introduction"><source><![CDATA[He added this message specially intented for you]]></source></trans-unit>
 			<trans-unit id="mail.signature"><source><![CDATA[Best regards]]></source></trans-unit>
 			<trans-unit id="confirmation"><source><![CDATA[Email had been sent, we thank you for sharing our content]]></source></trans-unit>
+			<trans-unit id="required"><source><![CDATA[required]]></source></trans-unit>
 		</body>
 	</file>
 </xliff>

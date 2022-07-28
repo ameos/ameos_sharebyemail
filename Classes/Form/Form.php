@@ -24,8 +24,6 @@ class Form
                     'name',
                     'text',
                     [
-                        'required' => 'required',
-                        'errorclass' => 'hasError',
                         'defaultValue' => ($user['name']) ? $user['name'] : ''
                     ]
                 )
@@ -83,11 +81,6 @@ class Form
     {
         $this->getForm()
             ->validator(
-                'name',
-                'required',
-                LocalizationUtility::getLLLabel('form.fields.name.errors.required')
-            )
-            ->validator(
                 'sender',
                 'required',
                 LocalizationUtility::getLLLabel('form.fields.sender.errors.required')
@@ -123,7 +116,7 @@ class Form
     /**
      * validate form
      *
-     * @param Request $request
+     * @param  Request $request
      * @return bool
      */
     public function validate(Request $request): bool

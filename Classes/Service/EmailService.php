@@ -11,9 +11,9 @@ class EmailService
 {
     /**
      * send function
+     *
      * @param array $settings
      * @param array $data
-     *
      */
     public function send(array $settings, array $data)
     {
